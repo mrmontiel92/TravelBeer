@@ -45,6 +45,8 @@ header{
     padding-top: 2px;
 }
 
+
+
 /*Colores*/
 
 .golden{
@@ -184,12 +186,12 @@ width: 100%;
 
 
 footer{
-    position: absolute;
-    top: 93%;
+    top: 92%;
     left: 0%;
     font-size: 60px;
     display: flex;
     width: 100%;
+    position: fixed;
 }
 
 footer a{
