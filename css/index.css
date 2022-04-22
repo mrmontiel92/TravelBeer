@@ -90,9 +90,9 @@ span{
 
 .barra div img{
     background-image: cover;
-    background-color: black;
     height: 100%;
 }
+
 
 .barra h1{
     font-size: 44px;
@@ -104,6 +104,19 @@ span{
 
 .barra ul{
     display: flex;
+    margin-right: 2%;
+    list-style-type: none;
+    margin-top: 6px;
+}
+
+nav{
+    height: 8%;
+    width: 100%;
+    background-color: black;
+}
+
+
+nav div ul li{
     margin-right: 2%;
     list-style-type: none;
     margin-top: 6px;
