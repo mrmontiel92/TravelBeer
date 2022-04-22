@@ -231,19 +231,19 @@ i4{
     position: absolute;
     top: 20%;
     background-color: rgba(255, 250, 250, 0.4);
-    width: 45%;
+    width: 40%;
     margin-left: 5%;
 }
 
 .containerQuienesSomos h2{
     color: goldenrod;
     text-align: center;
-    font-size: 30px;
+    font-size: 28px;
     padding: 20px;
 }
 
 .containerQuienesSomos p{
-    font-size: 30px;
+    font-size: 23px;
     padding: 3%;
     text-align: center;
     line-height: 130%;
@@ -696,6 +696,15 @@ input , textarea{
     .cardPromo{
         width: 30%;
     }
+    .containerQuienesSomos{
+        width: 50%;
+    }
+    .containerQuienesSomos h2{
+        font-size: 24px;
+    }
+    .containerQuienesSomos p{
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width:768px){
@@ -722,6 +731,9 @@ input , textarea{
     }
     .cardPromo{
         width: 47%;
+    }
+    .containerQuienesSomos{
+        width: 65%;
     }
 }
 
@@ -776,6 +788,9 @@ input , textarea{
     }
     .cardPromo{
         width: 95%;
+    }
+    .containerQuienesSomos{
+        width: 80%;
     }
 }
 
