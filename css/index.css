@@ -231,7 +231,6 @@ i4{
     position: absolute;
     top: 20%;
     background-color: rgba(255, 250, 250, 0.4);
-    height: 50%;
     width: 45%;
     margin-left: 5%;
 }
@@ -408,16 +407,15 @@ i4{
 /* Elige tu destino */
 
 .cardContainer{
-    width: 90%;
-    margin-left: 5%;
+    width: 80%;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .cardPromo{
-    width: 21%;
-    height: 500px;
+    width: 27%;
     border: 1px solid black;
     border-radius: 7px;
     box-shadow: 5px 10px 10px #555;;
@@ -461,7 +459,7 @@ i4{
     width: 100%;
     height: 55%;
     padding-bottom: 5%;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .cardPromoBody h2{
@@ -700,6 +698,33 @@ input , textarea{
     }
 }
 
+@media only screen and (max-width:768px){
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        height: 100vh;
+    }
+    .barra{
+        width: auto;
+        height: 5%;
+    }
+    .barra ul{
+        margin: 0;
+    }
+    .link{
+        font-size: 16px;
+    }
+    .barra h1{
+        font-size: 26px;
+        margin: 0;
+    }
+    .barra div{
+        margin: 0;
+    }
+    .cardPromo{
+        width: 47%;
+    }
+}
+
 
 @media only screen and (max-width:600px){
     .barra{
@@ -750,14 +775,14 @@ input , textarea{
         padding-top: 30%;
     }
     .cardPromo{
-        width: 40%;
+        width: 95%;
     }
 }
 
 @media only screen and (max-width:480px){
     .barra{
         width: auto;
-        height: 8%;
+        height: 10%;
     }
     .barra ul{
         margin: 0;
@@ -772,7 +797,7 @@ input , textarea{
         font-size: 11px;
     }
     .barra h1{
-        font-size: 30px;
+        font-size: 26px;
         margin-top: 15px;
     }
     .barra div{
@@ -783,8 +808,11 @@ input , textarea{
         padding: 0;
         margin: 0;
     }
+    .sectionTitulos p{
+        font-size: 20px;
+    }
     .cartelCentral h2{
-        font-size: 18px;
+        font-size: 19px;
     }
     footer a{
         font-size: 45px;
