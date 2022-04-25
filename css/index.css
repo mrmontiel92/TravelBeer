@@ -68,8 +68,8 @@ span{
 }
 
 li{
-    padding: 10px;
-    font-size: 24px;
+    padding: 6px;
+    font-size: 18px;
 }
 
 .videoBanner{
@@ -149,7 +149,7 @@ footer{
 }
 
 footer a{
-    padding: 10px;
+    padding: 8px;
 }
 
 .parrafoFooter{
@@ -637,40 +637,16 @@ input , textarea{
 
 
 @media only screen and (max-width:600px){
-    .barra{
-        width: auto;
-        height: 12%;
-    }
-    .barra ul{
-        margin: 0;
-        flex-direction: column;
-    }
-    .barra ul li{
-        padding-top: 0;
-        padding-bottom: 0;
-        padding-left: 3px;
-        padding-right: 3px;
-    }
 
-    .link{
-        font-size: 18px;
-    }
-    .barra h1{
-        font-size: 40px;
-        margin-top: 20px;
-    }
-    .barra div{
-        margin: 0;
-    }
     .tituloHeader{
         font-size: 26px;
         padding: 0;
         margin: 0;
     }
     .cartelCentral{
-        top: 35%;
+        top: 45%;
         margin-right: 5%;
-        height: 18%;
+        height: 20%;
     }
     .cartelCentral h2{
         font-size: 26px;
