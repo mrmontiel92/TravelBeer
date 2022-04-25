@@ -10,7 +10,6 @@
 body{
     margin: 0;
     padding: 0;
-    height: 100vh;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -22,14 +21,14 @@ a:visited{
     text-decoration: none;
 }
 
-.link:hover{
+.nav-item:hover{
+    background-color: #041241;
     color: black;
-    background-color: gold;
     transition: 0.7s;
-    padding: 10px;
+    padding: 8px;
 }
 
-header{
+.portada{
     height: 100vh;
     width: 100%;
 }
@@ -68,67 +67,9 @@ span{
     color: goldenrod;
 }
 
-.indexBody{
-    background-color: black;
-}
-
-.barra{
-    height: 8%;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.barra div{
-    width: 20%;
-    height: 100%;
-    margin-left: 50px;
-    display: flex;
-}
-
-.barra div img{
-    background-image: cover;
-    height: 100%;
-}
-
-
-.barra h1{
-    font-size: 44px;
-    color: rgb(138, 128, 128);
-    margin-top: 5px;
-    margin-left: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.barra ul{
-    display: flex;
-    margin-right: 2%;
-    list-style-type: none;
-    margin-top: 6px;
-}
-
-nav{
-    height: 8%;
-    width: 100%;
-    background-color: black;
-}
-
-
-nav div ul li{
-    margin-right: 2%;
-    list-style-type: none;
-    margin-top: 6px;
-}
-
-.link{
-    font-size: 26px;
-    color: white;
-}
-
 li{
-    padding: 15px;
+    padding: 10px;
+    font-size: 24px;
 }
 
 .videoBanner{
@@ -335,15 +276,15 @@ i4{
 
 .cardEquipoFooter{
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     width: 100%;
-    padding-top: 10px;
+    padding: 10px;
 }
 
 /* Galeria */
 
 .galeria{
-    height: 85%;
+    height: 86vh;
     width: 100%;
     display: grid;
     gap: 10px;
