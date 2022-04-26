@@ -21,11 +21,12 @@ a:visited{
     text-decoration: none;
 }
 
-.nav-item:hover{
-    background-color: #041241;
-    color: black;
+
+.navbar a:hover{
+    color: #000 !important;
+    background-color: gold;
     transition: 0.7s;
-    padding: 8px;
+    padding: 9px;
 }
 
 .portada{
@@ -37,13 +38,12 @@ a:visited{
     height: 5%;
     text-align: center;
     background-color: black;
-    margin-top: 0;
+    margin: 0;
     color: goldenrod;
     border-top: 1px solid goldenrod;
     font-size: 32px;
-    padding-top: 2px;
+    padding: 2px;
 }
-
 
 
 /*Colores*/
@@ -63,6 +63,11 @@ a:visited{
 
 /*-----------------------index*-----------------------------------*/
 
+.navbar{
+    padding: 0;
+    background-color: #000 !important;
+}
+
 span{
     color: goldenrod;
 }
@@ -74,7 +79,7 @@ li{
 
 .videoBanner{
     width: 100%;
-    height: 92%; 
+    height: 94%; 
     object-fit: cover;
 }
 
@@ -137,8 +142,6 @@ width: 100%;
     to {transform: rotate(360deg);}
 }
 
-
-
 footer{
     top: 92%;
     left: 0%;
@@ -179,6 +182,7 @@ i4{
 .laEmpresa{
     background-image: url(../img/cheers.jpg);
     background-size: cover;
+    height: 100vh;
 }
 
 .containerQuienesSomos{
@@ -205,49 +209,9 @@ i4{
     color: black;
 }
 
-.conoceAlEquipo h2{
-    color: white;
-    text-align: center;
-    font-size: 48px;
-    margin: 0%;
-    padding: 20px;
-}
 
-.conoceAlEquipo p{
-    color: white;
-    text-align: center;
-    font-size: 24px;
-}
-
-.contenedorCentroE{
-    background-color: black;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.cardEquipo{
-    background-color: #222;
-    background-image:linear-gradient(90deg,#222 20%,#555 90%);
-    width: 22%;
-    height: 230px;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 7px;
-    margin-bottom: 30px;
-}
-
-.cardAvatar{
-    width: 40%;
-    height: 70%;
-}
-
-.imagenE{
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
+.card{
+    flex-direction: row;
 }
 
 .cardEquipoBody{
@@ -284,7 +248,7 @@ i4{
 /* Galeria */
 
 .galeria{
-    height: 86vh;
+    height: 90vh;
     width: 100%;
     display: grid;
     gap: 10px;
@@ -613,26 +577,10 @@ input , textarea{
         grid-template-columns: 1fr 1fr 1fr;
         height: 100vh;
     }
-    .barra{
-        width: auto;
-        height: 5%;
-    }
-    .barra ul{
-        margin: 0;
-    }
-    .link{
-        font-size: 18px;
-    }
-    .barra h1{
-        font-size: 26px;
-        margin: 0;
-    }
-    .barra div{
-        margin: 0;
-    }
     .cardPromo{
         width: 30%;
     }
+
 }
 
 
@@ -666,29 +614,6 @@ input , textarea{
 }
 
 @media only screen and (max-width:480px){
-    .barra{
-        width: auto;
-        height: 8%;
-    }
-    .barra ul{
-        margin: 0;
-    }
-    .barra ul li{
-        padding-top: 0;
-        padding-bottom: 0;
-        padding-left: 3px;
-        padding-right: 3px;
-    }
-    .link{
-        font-size: 11px;
-    }
-    .barra h1{
-        font-size: 30px;
-        margin-top: 15px;
-    }
-    .barra div{
-        margin: 0;
-    }
     .tituloHeader{
         font-size: 26px;
         padding: 0;
