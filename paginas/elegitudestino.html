@@ -10,6 +10,22 @@
 <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
+    <!--Modal-->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Consulta Registrada</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Recibimos tu consulta! Un representante de nuestra agencia se contactara con vos a la brevedad.</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Nav bar-->
     <header>
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <div class="container-fluid">
@@ -37,87 +53,138 @@
             </div>
         </nav>
     </header>
+    <!--Seccion de cards promo-->
     <h2 class="tituloHeader">Promos!!</h2>
     <section class="cardContainer">
             <div class="cardPromo">
                 <div class="cardPromoHeader"><img src="../img/patagonia.jpg"></div>
                 <div class="cardPromoBody">
                     <h2>Titulo</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem eveniet, asperiores earum laboriosam modi quidem facilis reprehenderit labore exercitationem vitae ea, laudantium excepturi tempora hic unde optio magni quaerat nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas labore odio fugiat libero ducimus dicta tenetur dolor lorem </p>
+                    <p>Lorem ipsum dolor sit amet consectetur,   modi quidem facilis reprehenderit labore exercitationem vitae ea, laudantium excepturi tempora hic unde optio magni quaerat nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas labore odio fugiat libero ducimus dicta tenetur dolor lorem </p>
                 </div>
-                <div class="cardFooter"><a href=""><button>Ver Oferta</button></a></div>
+                <!--Botton para el modal-->
+                <div class="cardFooter">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Ver Oferta
+                    </button>
+                </div>
             </div>
             <div class="cardPromo">
                 <div class="cardPromoHeader"><img src="../img/playa.jpg"></div>
                 <div class="cardPromoBody">
                     <h2>Titulo</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem eveniet, asperiores earum laboriosam modi quidem facilis reprehenderit labore exercitationem vitae ea, laudantium excepturi tempora hic unde optio magni quaerat nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas labore odio fugiat libero ducimus dicta tenetur dolor </p>
+                    <p>Lorem ipsum dolor sit amet consectetur,   modi quidem facilis reprehenderit labore exercitationem vitae ea, laudantium excepturi tempora hic unde optio magni quaerat nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas labore odio fugiat libero ducimus dicta tenetur dolor </p>
                 </div>
-                <div class="cardFooter"><a href=""><button>Ver Oferta</button></a></div>
+                <!--Botton para el modal-->
+                <div class="cardFooter">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Ver Oferta
+                    </button>
+                </div>
             </div>
             <div class="cardPromo">
                 <div class="cardPromoHeader"><img src="../img/forest.jpg"></div>
                 <div class="cardPromoBody">
                     <h2>Titulo</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem eveniet, asperiores earum laboriosam modi quidem facilis reprehenderit labore exercitationem vitae ea, laudantium excepturi tempora hic unde optio magni quaerat nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas labore odio fugiat libero ducimus dicta tenetur dolor </p>
+                    <p>Lorem ipsum dolor sit amet consectetur,   quidem facilis reprehenderit labore exercitationem vitae ea, laudantium excepturi tempora hic unde optio magni quaerat nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas labore odio fugiat libero ducimus dicta tenetur dolor </p>
                 </div>
-                <div class="cardFooter"><a href=""><button>Ver Oferta</button></a></div>
+                <!--Botton para el modal-->
+                <div class="cardFooter">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Ver Oferta
+                    </button>
+                </div>
             </div>
             <div class="cardPromo">
                 <div class="cardPromoHeader"><img src="../img/snow.jpg"></div>
                 <div class="cardPromoBody">
                     <h2>Titulo</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem eveniet, asperiores earum laboriosam modi quidem facilis reprehenderit labore exercitationem vitae ea, laudantium excepturi tempora hic unde optio magni quaerat nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas labore odio fugiat libero ducimus dicta tenetur dolor </p>
+                    <p>Lorem ipsum dolor sit amet consectetur,   quidem facilis reprehenderit labore exercitationem vitae ea, laudantium excepturi tempora hic unde optio magni quaerat nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas labore odio fugiat libero ducimus dicta tenetur dolor </p>
                 </div>
-                <div class="cardFooter"><a href=""><button>Ver Oferta</button></a></div>
+                <!--Botton para el modal-->
+                <div class="cardFooter">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Ver Oferta
+                    </button>
+                </div>
             </div>
             <div class="cardPromo">
                 <div class="cardPromoHeader"><img src="../img/tarjeta5.jpg"></div>
                 <div class="cardPromoBody">
                     <h2>Titulo</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem eveniet, asperiores earum laboriosam modi quidem facilis reprehenderit labore exercitationem vitae ea, laudantium excepturi tempora hic unde optio magni quaerat nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas labore odio fugiat libero ducimus dicta tenetur dolor </p>
+                    <p>Lorem ipsum dolor sit amet consectetur,  facilis reprehenderit labore exercitationem vitae ea, laudantium excepturi tempora hic unde optio magni quaerat nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas labore odio fugiat libero ducimus dicta tenetur dolor </p>
                 </div>
-                <div class="cardFooter"><a href=""><button>Ver Oferta</button></a></div>
+                <!--Botton para el modal-->
+                <div class="cardFooter">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Ver Oferta
+                    </button>
+                </div>
             </div>
             <div class="cardPromo">
                 <div class="cardPromoHeader"><img src="../img/tarjeta6.jpg"></div>
                 <div class="cardPromoBody">
                     <h2>Titulo</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem eveniet, asperiores earum laboriosam modi quidem facilis reprehenderit labore exercitationem vitae ea, laudantium excepturi tempora hic unde optio magni quaerat nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas labore odio fugiat libero ducimus dicta tenetur dolor </p>
+                    <p>Lorem ipsum dolor sit amet consectetur,  reprehenderit labore exercitationem vitae ea, laudantium excepturi tempora hic unde optio magni quaerat nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas labore odio fugiat libero ducimus dicta tenetur dolor </p>
                 </div>
-                <div class="cardFooter"><a href=""><button>Ver Oferta</button></a></div>
+                <!--Botton para el modal-->
+                <div class="cardFooter">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Ver Oferta
+                    </button>
+                </div>
             </div>
             <div class="cardPromo">
                 <div class="cardPromoHeader"><img src="../img/tarjeta7.jpeg"></div>
                 <div class="cardPromoBody">
                     <h2>Titulo</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem eveniet, asperiores earum laboriosam modi quidem facilis reprehenderit labore exercitationem vitae ea, laudantium excepturi tempora hic unde optio magni quaerat nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas labore odio fugiat libero ducimus dicta tenetur dolor </p>
+                    <p>Lorem ipsum dolor sit amet consectetur,  reprehenderit labore exercitationem vitae ea, laudantium excepturi tempora hic unde optio magni quaerat nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas labore odio fugiat libero ducimus dicta tenetur dolor </p>
                 </div>
-                <div class="cardFooter"><a href=""><button>Ver Oferta</button></a></div>
+                <!--Botton para el modal-->
+                <div class="cardFooter">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Ver Oferta
+                    </button>
+                </div>
             </div>
             <div class="cardPromo">
                 <div class="cardPromoHeader"><img src="../img/tarjeta8.jpeg"></div>
                 <div class="cardPromoBody">
                     <h2>Titulo</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem eveniet, asperiores earum laboriosam modi quidem facilis reprehenderit labore exercitationem vitae ea, laudantium excepturi tempora hic unde optio magni quaerat nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas labore odio fugiat libero ducimus dicta tenetur dolor </p>
+                    <p>Lorem ipsum dolor sit amet consectetur,  facilis reprehenderit labore exercitationem vitae ea, laudantium excepturi tempora hic unde optio magni quaerat nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas labore odio fugiat libero ducimus dicta tenetur dolor </p>
                 </div>
-                <div class="cardFooter"><a href=""><button>Ver Oferta</button></a></div>
+                <!--Botton para el modal-->
+                <div class="cardFooter">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Ver Oferta
+                    </button>
+                </div>
             </div>
             <div class="cardPromo">
                 <div class="cardPromoHeader"><img src="../img/tarjeta9.jpeg"></div>
                 <div class="cardPromoBody">
                     <h2>Titulo</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem eveniet, asperiores earum laboriosam modi quidem facilis reprehenderit labore exercitationem vitae ea, laudantium excepturi tempora hic unde optio magni quaerat nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas labore odio fugiat libero ducimus dicta tenetur dolor </p>
+                    <p>Lorem ipsum dolor sit amet consectetur, i quidem facilis reprehenderit labore exercitationem vitae ea, laudantium excepturi tempora hic unde optio magni quaerat nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas labore odio fugiat libero ducimus dicta tenetur dolor </p>
                 </div>
-                <div class="cardFooter"><a href=""><button>Ver Oferta</button></a></div>
+                <!--Botton para el modal-->
+                <div class="cardFooter">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Ver Oferta
+                    </button>
+                </div>
             </div>
             <div class="cardPromo">
                 <div class="cardPromoHeader"><img src="../img/tarjeta10.jpg"></div>
                 <div class="cardPromoBody">
                     <h2>Titulo</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem eveniet, asperiores earum laboriosam modi quidem facilis reprehenderit labore exercitationem vitae ea, laudantium excepturi tempora hic unde optio magni quaerat nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas labore odio fugiat libero ducimus dicta tenetur dolor </p>
+                    <p>Lorem ipsum dolor sit amet consectetur,  laboriosam modi quidem facilis reprehenderit labore exercitationem vitae ea, laudantium excepturi tempora hic unde optio magni quaerat nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas labore odio fugiat libero ducimus dicta tenetur dolor </p>
                 </div>
-                <div class="cardFooter"><a href=""><button>Ver Oferta</button></a></div>
+                <!--Botton para el modal-->
+                <div class="cardFooter">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Ver Oferta
+                    </button>
+                </div>
             </div>
             <div class="cardPromo">
                 <div class="cardPromoHeader"><img src="../img/tarjeta11.jpg"></div>
@@ -125,7 +192,12 @@
                     <h2>Titulo</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem eveniet, asperiores earum laboriosam modi quidem facilis reprehenderit labore exercitationem vitae ea, laudantium excepturi tempora hic unde optio magni quaerat nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas labore odio fugiat libero ducimus dicta tenetur dolor </p>
                 </div>
-                <div class="cardFooter"><a href=""><button>Ver Oferta</button></a></div>
+                <!--Botton para el modal-->
+                <div class="cardFooter">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Ver Oferta
+                    </button>
+                </div>
             </div>
             <div class="cardPromo">
                 <div class="cardPromoHeader"><img src="../img/tarjeta12.jpg"></div>
@@ -133,7 +205,12 @@
                     <h2>Titulo</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem eveniet, asperiores earum laboriosam modi quidem facilis reprehenderit labore exercitationem vitae ea, laudantium excepturi tempora hic unde optio magni quaerat nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas labore odio fugiat libero ducimus dicta tenetur dolor </p>
                 </div>
-                <div class="cardFooter"><a href=""><button>Ver Oferta</button></a></div>
+                <!--Botton para el modal-->
+                <div class="cardFooter">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Ver Oferta
+                    </button>
+                </div>
             </div>
     </section>
 </body>

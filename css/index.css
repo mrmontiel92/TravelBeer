@@ -13,39 +13,6 @@ body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-a{
-    text-decoration: none;
-}
-
-a:visited{
-    text-decoration: none;
-}
-
-
-.navbar a:hover{
-    color: #000 !important;
-    background-color: gold;
-    transition: 0.7s;
-    padding: 9px;
-}
-
-.portada{
-    height: 100vh;
-    width: 100%;
-}
-
-.tituloHeader{
-    height: 5%;
-    text-align: center;
-    background-color: black;
-    margin: 0;
-    color: goldenrod;
-    border-top: 1px solid goldenrod;
-    font-size: 32px;
-    padding: 2px;
-}
-
-
 /*Colores*/
 
 .golden{
@@ -61,6 +28,8 @@ a:visited{
     color: black;
 }
 
+
+
 /*-----------------------index*-----------------------------------*/
 
 .navbar{
@@ -75,6 +44,26 @@ span{
 li{
     padding: 6px;
     font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: #000 !important;
+    background-color: gold;
+    transition: 0.7s;
+    padding: 9px;
+}
+
+.portada{
+    height: 100vh;
+    width: 100%;
 }
 
 .videoBanner{
@@ -137,7 +126,6 @@ width: 100%;
     transition: 2s;
 }
 
-
 @keyframes botonGiratorio{
     to {transform: rotate(360deg);}
 }
@@ -189,7 +177,7 @@ i4{
     position: absolute;
     top: 20%;
     background-color: rgba(255, 250, 250, 0.4);
-    height: 50%;
+    height: auto;
     width: 45%;
     margin-left: 5%;
 }
@@ -202,20 +190,38 @@ i4{
 }
 
 .containerQuienesSomos p{
-    font-size: 30px;
+    font-size: 23px;
     padding: 3%;
     text-align: center;
     line-height: 130%;
     color: black;
 }
 
+.cardEquipo{
+    background-color: #222;
+    background-image:linear-gradient(90deg,#222 20%,#555 90%);
+    width: 30%;
+    height: 340px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 7px;
+    margin-bottom: 30px;
+}
 
-.card{
-    flex-direction: row;
+.cardAvatar{
+    width: 50%;
+    height: 70%;
+}
+
+.imagenE{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
 }
 
 .cardEquipoBody{
-    width: 60%;
+    width: 50%;
     height: 70%;
 }
 
@@ -223,29 +229,41 @@ i4{
     margin: 0%;
     text-align: center;
     padding-bottom: 2px;
-    color: gold
+    color: gold;
+    font-size: 24px;
 }
 
 .cardEquipoBody ul{
-    margin-top: 12px;
-    margin-left: 30px;
+    margin-left: 5px;
     color: white;
 }
 
 .cardEquipoBody li{
-    padding: 6px 0;
+    padding: 13px 0;
     margin: 0;
-    font-size: 1em;
+    font-size: 18px;
 }
 
 .cardEquipoFooter{
     color: white;
-    font-size: 14px;
+    font-size: 15px;
     width: 100%;
     padding: 10px;
+    padding-top: 30px;
 }
 
 /* Galeria */
+
+.tituloHeader{
+    height: 5%;
+    text-align: center;
+    background-color: black;
+    margin: 0;
+    color: goldenrod;
+    border-top: 1px solid goldenrod;
+    font-size: 32px;
+    padding: 2px;
+}
 
 .galeria{
     height: 90vh;
@@ -323,7 +341,7 @@ i4{
     background-image: url(../img/img10.jpg);
 }
 
-/* Elige tu destino */
+/* Elegi tu destino */
 
 .cardContainer{
     width: 90%;
@@ -355,12 +373,11 @@ i4{
     width: 100%;
 }
 
-
 .cardPromoBody{
     width: 100%;
-    height: 55%;
+    height: 53%;
     padding-bottom: 5%;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .cardPromoBody h2{
@@ -377,20 +394,17 @@ i4{
 }
 
 .cardFooter{
-    height: 5%;
+    height: 7%;
 }
 
 .cardFooter button{
     border: 1px solid black;
-    font-size: 20px;
+    font-size: 16px;
     width: 100%;
     height: 100%;
     background-color: gold;
     border-radius: 7px;
-}
-
-.cardFooter button:hover{
-    color: white;
+    color: #000;
 }
 
 /*------------------Contacto--------------------*/
@@ -402,96 +416,34 @@ i4{
 }
 
 .sectionTitulos p{
-    padding: 1% 0;
+    padding: 1% 1%;
     font-size: 30px;
     text-align: center;
     color: goldenrod;
     border-top: 1px solid gold;
+    margin: 0;
 }
 
-.form_container{
-    display: flex;
+.formulario{
     background-image: url(../img/img6.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    padding: 1% 0;
 }
 
-.form_borde{
-    border: solid 3px gold;
-    width: 44%;
-    margin: 0 auto;
-    background-color: #000;
-    color: gold;
-}
-
-.form_borde h2{
+.formulario h2{
     text-align: center;
-    margin: 2% auto;
-    font-size: 28px;
-    color: goldenrod;
-}
-
-.form_borde hr{
-    color: gold;
-    border: none;
-    border-bottom: solid 3px gold;
-    width: 50%;
-    margin: 0 auto;
-    padding: 0% 1%;
+    font-size: 30px;
 }
 
 form{
-    padding: 1% 3%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-form div {
-    padding: 3%;
-}
-
-.div_chico{
-    width: 45%;
-}
-
-.div_grande{
-    width: 90%;
+    width: 50%;
+    margin: auto;
 }
 
 label{
     display: block;
-    margin-bottom: 2%;
-    font-size: 30px;
+    margin-bottom: 1%;
+    font-size: 36px;
 }
-
-input , textarea{
-    width: 95%;
-    border: none;
-    background: none;
-    color: goldenrod;
-    border-bottom: solid 3px white;
-    font-size: 20px;
-    line-height: 30px;
-    }
-
-    .botones{
-        width: 30%;
-        display: flex;
-    }
-
-    .boton2{
-        width: 100%;
-        background-color: black;
-        height: 100%;
-        border: 2px solid gold;
-        color: white;
-    }
-    
-    .boton2:hover{
-        color: gold;
-    }
 
 
 /*--------------------------------------------------------------------------Responsive----------------------------------------------------------------------------------*/
@@ -566,12 +518,15 @@ input , textarea{
     }
 }
 
-
 @media only screen and (max-width:1023px){
     .videoBanner{
         width: 100%;
         height: 95%; 
         object-fit: cover;
+    }
+    .cartelCentral{
+        font-size: 26px;
+        margin-right: 5%;
     }
     .galeria{
         grid-template-columns: 1fr 1fr 1fr;
@@ -580,11 +535,18 @@ input , textarea{
     .cardPromo{
         width: 30%;
     }
-
+    .containerQuienesSomos{
+        width: 70%;
+    }
+    .cardEquipo{
+        width: 49%;
+    }
+    footer a{
+        font-size: 36px;
+    }
 }
 
-
-@media only screen and (max-width:600px){
+@media only screen and (max-width:650px){
 
     .tituloHeader{
         font-size: 26px;
@@ -611,6 +573,28 @@ input , textarea{
     .cardPromo{
         width: 40%;
     }
+    .sectionTitulos p{
+        font-size: 20px;
+    }
+    .containerQuienesSomos{
+        width: 90%;
+        top: 32%;
+    }
+    .containerQuienesSomos h2{
+        font-size: 24px;
+    }
+    .containerQuienesSomos p{
+        font-size: 18px;
+    }
+    .cardEquipo{
+        width: 100%;
+    }
+    .cardEquipoBody li{
+        padding: 4px;
+    }
+    footer a{
+        font-size: 30px;
+    }
 }
 
 @media only screen and (max-width:480px){
@@ -628,4 +612,16 @@ input , textarea{
     .cardPromo{
         width: 100%;
     }
+    .sectionTitulos p{
+        font-size: 16px;
+    }
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        height: 100vh;
+    }
+    .containerQuienesSomos h2{
+        font-size: 20px;
+    }
+    .containerQuienesSomos p{
+        font-size: 16px;
 }
