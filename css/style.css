@@ -144,12 +144,6 @@ footer a{
     padding: 8px;
 }
 
-.parrafoFooter{
-    color: gold;
-    font-size: 38px;
-    padding-left: 30px;
-}
-
 i1{
     color: blue;
 }
@@ -283,6 +277,7 @@ i4{
     background-position: center;
     background-size: cover;
     box-shadow: 8px 8px 10px black;
+    transition: all 0.4s;
 }
 
 .img:hover{
@@ -293,51 +288,39 @@ i4{
 .img1{
     background-image: url(../img/img1.jpg);
 }
-
 .img2{
     background-image: url(../img/img2.JPG);
 }
-
 .img3{
     background-image: url(../img/img3.jpg);
 }
-
 .img4{
     background-image: url(../img/img4.jpeg);
 }
-
 .img5{
     background-image: url(../img/img5.jpg);
 }
-
 .img6{
     background-image: url(../img/vertical1.jpg);
 }
-
 .img7{
     background-image: url(../img/central.jpg);
 }
-
 .img8{
     background-image: url(../img/vertical2.jpg);
 }
-
 .img9{
     background-image: url(../img/img6.jpg);
 }
-
 .img10{
     background-image: url(../img/img7.jpg);
 }
-
 .img11{
     background-image: url(../img/img8.JPG);
 }
-
 .img12{
     background-image: url(../img/img9.JPG);
 }
-
 .img13{
     background-image: url(../img/img10.jpg);
 }
@@ -346,7 +329,7 @@ i4{
 
 .cardContainer{
     width: 90%;
-    margin-left: 5%;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -530,7 +513,7 @@ label{
         height: 100vh;
     }
     .cardPromo{
-        width: 30%;
+        width: 32%;
     }
     .containerQuienesSomos{
         width: 70%;
@@ -567,7 +550,7 @@ label{
         padding-top: 30%;
     }
     .cardPromo{
-        width: 40%;
+        width: 48%;
     }
     .sectionTitulos p{
         font-size: 20px;
