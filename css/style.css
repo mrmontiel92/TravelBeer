@@ -6,7 +6,6 @@
     margin: 0;
 }
 
-
 body{
     margin: 0;
     padding: 0;
@@ -27,8 +26,6 @@ body{
     background-color: gold;
     color: black;
 }
-
-
 
 /*-----------------------index*-----------------------------------*/
 
@@ -95,7 +92,7 @@ a:visited{
 }
 
 .cartelCentral:hover::before{
-width: 100%;
+    width: 100%;
 }
 
 .cartelCentral:hover .boton1{
@@ -132,9 +129,8 @@ width: 100%;
 }
 
 footer{
-    top: 92%;
+    top: 94%;
     left: 0%;
-    font-size: 60px;
     display: flex;
     width: 100%;
     position: fixed;
@@ -255,7 +251,6 @@ i4{
     background-color: black;
     margin: 0;
     color: goldenrod;
-    border-top: 1px solid goldenrod;
     font-size: 32px;
     padding: 2px;
 }
@@ -327,6 +322,15 @@ i4{
 
 /* Elegi tu destino */
 
+.sectionTitulos p{
+    padding: 1% 1%;
+    font-size: 30px;
+    text-align: center;
+    color: goldenrod;
+    border-top: 1px solid gold;
+    margin-top: 0;
+}
+
 .cardContainer{
     width: 90%;
     margin: auto;
@@ -393,44 +397,44 @@ i4{
 
 /*------------------Contacto--------------------*/
 
-.section_titulos{
-    height: 5%;
-    width: 70%;
-    margin: 0 auto;
-}
 
-.sectionTitulos p{
-    padding: 1% 1%;
-    font-size: 30px;
-    text-align: center;
-    color: goldenrod;
-    border-top: 1px solid gold;
-    margin: 0;
-}
-
-.formulario{
-    background-image: url(../img/img6.jpg);
+.contactoMain{
+    height: 100%;
+    background-image: url(../img/tarjeta9.jpeg);
     background-size: cover;
 }
 
-.formulario h2{
-    text-align: center;
-    font-size: 30px;
+.contactoMain div{
+    padding: 7px;
 }
 
 form{
-    width: 50%;
-    margin: auto;
+    background-image:linear-gradient(90deg,#222 20%,#555 90%);
 }
 
 label{
     display: block;
     margin-bottom: 1%;
-    font-size: 36px;
+    font-size: 24px;
+    color: goldenrod;
 }
 
+.container h2{
+    text-align: center;
+    color: goldenrod;
+    font-size: 32px;
+}
 
-/*--------------------------------------------------------------------------Responsive----------------------------------------------------------------------------------*/
+.container button{
+    border: 1px solid black;
+    font-size: 20px;
+    height: 100%;
+    background-color: gold;
+    border-radius: 7px;
+    color: #000;
+}
+
+/*-----------------------------------------------Responsive---------------------------------------------------------------------------------*/
 
 @media only screen and (min-width:1024px){
     .img1{
@@ -498,7 +502,7 @@ label{
         grid-row: 4/5;
     }
     footer a{
-        font-size: 45px;
+        font-size: 37px;
     }
 }
 
