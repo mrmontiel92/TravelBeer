@@ -9,50 +9,43 @@
 
 /*Colores*/
 
+$color1:goldenrod;
+$color2:black;
+$color3:white;
+
 .golden{
-    background-color: goldenrod;
+    background-color: $color1;
 }
-
 .negro{
-    background-color: black;
+    background-color: $color2;
 }
-
-.gold{
-    background-color: gold;
-    color: black;
-}
-
 .gold2{
-    color: goldenrod;
+    color: $color1;
 }
 
 /*-----------------------Nav Bar-----------------------------------*/
 
 .navbar{
     padding: 0;
-    background-color: #000 !important;
-}
-
-span{
-    color: goldenrod;
-}
-
-li{
-    padding: 6px;
-    font-size: 18px;
-}
-
-a{
+    background-color: $color2 !important;
+    span{
+        color: $color1;
+    }
+    li{
+        padding: 6px;
+        font-size: 18px;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:visited{
     text-decoration: none;
-}
-
-a:visited{
-    text-decoration: none;
+    }
 }
 
 .navbar a:hover{
-    color: #000 !important;
-    background-color: gold;
+    color: $color2 !important;
+    background-color: $color1;
     transition: 0.7s;
     padding: 9px;
 }
@@ -62,9 +55,9 @@ a:visited{
 .tituloHeader{
     height: 5%;
     text-align: center;
-    background-color: black;
+    background-color: $color2;
     margin: 0;
-    color: goldenrod;
+    color: $color1;
     font-size: 32px;
     padding: 2px;
 }
@@ -73,8 +66,8 @@ a:visited{
     padding: 1% 1%;
     font-size: 30px;
     text-align: center;
-    color: goldenrod;
-    border-top: 1px solid gold;
+    color: $color1;
+    border-top: 1px solid $color1;
     margin-top: 0;
 }
 
@@ -86,92 +79,82 @@ footer{
     display: flex;
     width: 20%;
     position: fixed;
+    a{
+        padding: 8px;
+    }
+    i1{
+        color: blue;
+    }
+    i2{
+        color: rgb(7, 110, 7);
+    }
+    i3{
+        color: rgb(189, 54, 20);
+    }
+    i4{
+        color: rgb(0, 194, 10);
+    }
 }
-
-footer a{
-    padding: 10px;
-}
-
-i1{
-    color: blue;
-}
-i2{
-    color: rgb(7, 110, 7);
-}
-i3{
-    color: rgb(189, 54, 20);
-}
-i4{
-    color: rgb(0, 194, 10);
-}
-
 /*-----------------------index*-----------------------------------*/
 
 .portada{
     height: 100vh;
     width: 100%;
-}
-
-.videoBanner{
-    width: 100%;
-    height: 94%; 
-    object-fit: cover;
-}
-
-.cartelCentral{
-    position: absolute;
-    top: 45%;
-    left: 15%;
-    height: auto;
-    margin-right: 5%;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    z-index: 0;
-}
-
-.cartelCentral::before{
-    width: 1%;
-    height: 100%;
-    background-color: #041241;
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: width 2s;
-}
-
-.cartelCentral:hover::before{
-    width: 100%;
-}
-
-.cartelCentral:hover .boton1{
-    background-color: #041241;
-    animation-name: botonGiratorio;
-    animation-timing-function: ease-in-out;
-    animation-duration: 2s;
-    color: goldenrod;
-}
-
-.cartelCentral h2{
-    padding: 19px;
-    color: goldenrod;
-    font-size: 32px;
-    margin-top: 30px;
-}
-
-.boton1{
-    height: 100%;
-    padding: 54px 16px;
-    border: solid;
-    border-width: 2px;
-    border-color: goldenrod;
-    margin: 0%;
-    line-height: 30px;
-    font-size: 26px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0);
-    transition: 2s;
+    .videoBanner{
+        width: 100%;
+        height: 94%; 
+        object-fit: cover;
+    }
+    .cartelCentral{
+        position: absolute;
+        top: 45%;
+        left: 15%;
+        height: auto;
+        margin-right: 5%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        z-index: 0;
+    }
+    h2{
+        padding: 19px;
+        color: $color1;
+        font-size: 32px;
+        margin-top: 30px;
+    }
+    .boton1{
+        height: 100%;
+        padding: 54px 16px;
+        border: solid;
+        border-width: 2px;
+        border-color: $color1;
+        margin: 0%;
+        line-height: 30px;
+        font-size: 26px;
+        color: $color3;
+        background-color: rgba(0, 0, 0, 0);
+        transition: 2s;
+    }
+    .cartelCentral::before{
+        width: 1%;
+        height: 100%;
+        background-color: #041241;
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: width 2s;
+    }
+    .cartelCentral:hover::before{
+        width: 100%;
+    }
+    .cartelCentral:hover .boton1{
+        background-color: #041241;
+        animation-name: botonGiratorio;
+        animation-timing-function: ease-in-out;
+        animation-duration: 2s;
+        color: $color1;
+    }
 }
 
 @keyframes botonGiratorio{
@@ -193,21 +176,19 @@ i4{
     height: auto;
     width: 45%;
     margin-left: 5%;
-}
-
-.containerQuienesSomos h2{
-    color: goldenrod;
-    text-align: center;
-    font-size: 30px;
-    padding: 20px;
-}
-
-.containerQuienesSomos p{
-    font-size: 23px;
-    padding: 3%;
-    text-align: center;
-    line-height: 130%;
-    color: black;
+    h2{
+        color: $color1;
+        text-align: center;
+        font-size: 30px;
+        padding: 20px;
+    }
+    p{
+        font-size: 23px;
+        padding: 3%;
+        text-align: center;
+        line-height: 130%;
+        color: $color2;
+    }
 }
 
 .cardEquipo{
@@ -220,49 +201,42 @@ i4{
     flex-wrap: wrap;
     border-radius: 7px;
     margin-bottom: 30px;
-}
-
-.cardAvatar{
-    width: 50%;
-    height: 70%;
-}
-
-.imagenE{
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-}
-
-.cardEquipoBody{
-    width: 50%;
-    height: 70%;
-}
-
-.cardEquipoBody h2{
-    margin: 0%;
-    text-align: center;
-    padding-bottom: 2px;
-    color: gold;
-    font-size: 24px;
-}
-
-.cardEquipoBody ul{
-    margin-left: 5px;
-    color: white;
-}
-
-.cardEquipoBody li{
-    padding: 13px 0;
-    margin: 0;
-    font-size: 18px;
-}
-
-.cardEquipoFooter{
-    color: white;
-    font-size: 15px;
-    width: 100%;
-    padding: 10px;
-    padding-top: 30px;
+    .cardAvatar{
+        width: 50%;
+        height: 70%;
+    }
+    .imagenE{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+    .cardEquipoBody{
+        width: 50%;
+        height: 70%;
+        h2{
+            margin: 0%;
+            text-align: center;
+            padding-bottom: 2px;
+            color: $color1;
+            font-size: 24px;
+        }
+        ul{
+            margin-left: 5px;
+            color: $color3;
+            li{
+                padding: 13px 0;
+                margin: 0;
+                font-size: 18px;
+            }
+        }
+    }
+    .cardEquipoFooter{
+        color: $color3;
+        font-size: 15px;
+        width: 100%;
+        padding: 10px;
+        padding-top: 30px;
+    }
 }
 
 /* Galeria */
@@ -273,25 +247,22 @@ i4{
     width: 100%;
     display: grid;
     gap: 10px;
-    background-color: goldenrod;
+    background-color: $color1;
     padding: 10px;
     width: 100%;
-}
-
-.img{
-    border-radius: 7px;
-    transition: all 0.3s;
-    background-position: center;
-    background-size: cover;
-    box-shadow: 8px 8px 10px black;
-}
-
-.img:hover{
-    transform: scale(1.3);
-    transition: all 0.3s;
-}
-
-.img1{
+    .img{
+        border-radius: 7px;
+        transition: all 0.3s;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 8px 8px 10px $color2;
+        
+    }
+    .img:hover{
+        transform: scale(1.3);
+        transition: all 0.3s;
+    }
+    .img1{
     background-image: url(../img/img1.jpg);
 }
 .img2{
@@ -330,9 +301,9 @@ i4{
 .img13{
     background-image: url(../img/img10.jpg);
 }
+}
 
 /* Elegi tu destino */
-
 
 .cardContainer{
     width: 90%;
@@ -345,54 +316,47 @@ i4{
 .cardPromo{
     width: 21%;
     height: 500px;
-    border: 1px solid black;
+    border: 1px solid $color2;
     border-radius: 7px;
     box-shadow: 5px 10px 10px #555;;
     margin-top: 30px;
     background-color: #557b83;
-}
-
-.cardPromoHeader{
-    width: 100%;
-    height: 40%;
-}
-
-.cardPromoHeader img{
-    object-fit: cover;
-    max-width: 100%;
-    height: 100%;
-    width: 100%;
-}
-
-.cardPromoBody{
-    width: 100%;
-    height: 53%;
-    overflow: auto;
-}
-
-.cardPromoBody h2{
-    margin-left: 10px;
-    color: gold;
-    font-size: 36px;
-}
-
-.cardPromoBody p{
-    color: white;
-    margin: 0 8px;
-}
-
-.cardFooter{
-    height: 7%;
-}
-
-.cardFooter button{
-    border: 1px solid black;
-    font-size: 16px;
-    width: 100%;
-    height: 100%;
-    background-color: gold;
-    border-radius: 7px;
-    color: #000;
+    .cardPromoHeader{
+        width: 100%;
+        height: 40%;
+        img{
+            object-fit: cover;
+            max-width: 100%;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .cardPromoBody{
+        width: 100%;
+        height: 53%;
+        overflow: auto;
+        h2{
+            margin-left: 10px;
+            color: $color1;
+            font-size: 36px;
+        }
+        p{
+            color: $color3;
+            margin: 0 8px;
+        }
+    }
+    .cardFooter{
+        height: 7%;
+        button{
+            border: 1px solid $color2;
+            font-size: 16px;
+            width: 100%;
+            height: 100%;
+            background-color: gold;
+            border-radius: 7px;
+            color: $color2;
+        }
+    }
 }
 
 /*------------------Contacto--------------------*/
@@ -402,36 +366,36 @@ i4{
     height: 100%;
     background-image: url(../img/tarjeta9.jpeg);
     background-size: cover;
+    div{
+        padding: 8.5px;
+    }
 }
 
-.contactoMain div{
-    padding: 8.5px;
+
+.container{
+    h2{
+        text-align: center;
+        color: $color1;
+        font-size: 32px;
+    }
+    button{
+        border: 1px solid $color2;
+        font-size: 20px;
+        height: 100%;
+        background-color: gold;
+        border-radius: 7px;
+        color: $color2;
+    }
 }
 
 form{
     background-image:linear-gradient(90deg,#222 20%,#555 90%);
-}
-
-label{
-    display: block;
-    margin-bottom: 1%;
-    font-size: 24px;
-    color: goldenrod;
-}
-
-.container h2{
-    text-align: center;
-    color: goldenrod;
-    font-size: 32px;
-}
-
-.container button{
-    border: 1px solid black;
-    font-size: 20px;
-    height: 100%;
-    background-color: gold;
-    border-radius: 7px;
-    color: #000;
+    label{
+        display: block;
+        margin-bottom: 1%;
+        font-size: 24px;
+        color: $color1;
+    }
 }
 
 /*-----------------------------------------------Responsive---------------------------------------------------------------------------------*/
@@ -542,15 +506,11 @@ label{
     }
     .cartelCentral h2{
         font-size: 24px;
-        margin-top: 0%;
     }
     .videoBanner{
         width: 100%;
         height: 97%;
         object-fit: cover;
-    }
-    .boton1{
-        padding-top: 30%;
     }
     .cardPromo{
         width: 48%;
@@ -582,7 +542,8 @@ label{
 @media only screen and (max-width:480px){
     .tituloHeader{
         font-size: 26px;
-        padding: 5px;
+        padding: 0;
+        margin: 0;
     }
     .cartelCentral h2{
         font-size: 17px;
@@ -592,6 +553,9 @@ label{
     }
     .cardPromo{
         width: 100%;
+    }
+    .cardEquipoFooter{
+        margin-top: 5px;
     }
     .sectionTitulos p{
         font-size: 16px;
