@@ -381,6 +381,9 @@ form label {
   font-size: 24px;
   color: goldenrod;
 }
+form .form-check-input {
+  margin: 8px !important;
+}
 
 /*-----------------------------------------------Responsive---------------------------------------------------------------------------------*/
 @media only screen and (min-width: 1024px) {
@@ -577,6 +580,14 @@ form label {
 
   footer a {
     font-size: 26px;
+  }
+
+  .container h2 {
+    font-size: 30px;
+  }
+
+  form label {
+    font-size: 17px;
   }
 }
 
