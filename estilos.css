@@ -69,14 +69,14 @@
 
 /*-------------------------footer--------------------------------*/
 footer {
-  top: 93%;
+  top: 92%;
   left: 0%;
   display: flex;
   width: 20%;
   position: fixed;
 }
 footer a {
-  padding: 8px;
+  padding: 0 10px 0 10px;
 }
 footer i1 {
   color: blue;
@@ -218,11 +218,11 @@ footer i4 {
   font-size: 24px;
 }
 .cardEquipo .cardEquipoBody ul {
-  margin-left: 5px;
+  margin-left: 0px;
   color: white;
 }
 .cardEquipo .cardEquipoBody ul li {
-  padding: 13px 0;
+  padding: 9px 0;
   margin: 0;
   font-size: 18px;
 }
@@ -537,7 +537,7 @@ form .form-check-input {
 
   .containerQuienesSomos {
     width: 90%;
-    top: 38%;
+    top: 41%;
   }
 
   .containerQuienesSomos h2 {
@@ -616,7 +616,7 @@ form .form-check-input {
 .fondoColoreado, .fondoColoreado--nuevo {
   background-color: goldenrod;
   color: black;
-  padding: 2px;
+  padding: 1px;
   border-radius: 7px;
 }
 
