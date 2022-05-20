@@ -231,7 +231,7 @@ footer i4 {
   font-size: 15px;
   width: 100%;
   padding: 10px;
-  padding-top: 30px;
+  padding-top: 25px;
 }
 
 /* Galeria */
@@ -537,7 +537,7 @@ form .form-check-input {
 
   .containerQuienesSomos {
     width: 90%;
-    top: 41%;
+    top: 43%;
   }
 
   .containerQuienesSomos h2 {
@@ -593,11 +593,11 @@ form .form-check-input {
   }
 
   .containerQuienesSomos h2 {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .containerQuienesSomos p {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   footer a {
