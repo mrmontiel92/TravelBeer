@@ -103,7 +103,7 @@ footer i4 {
 }
 .portada .cartelCentral {
   position: absolute;
-  top: 45%;
+  top: 47%;
   left: 15%;
   margin-right: 5%;
   background-color: rgba(0, 0, 0, 0.8);
@@ -513,10 +513,6 @@ form .form-check-input {
     margin: 0;
   }
 
-  .cartelCentral {
-    top: 45%;
-  }
-
   .cartelCentral h2 {
     font-size: 24px;
   }
@@ -602,6 +598,7 @@ form .form-check-input {
 
   footer a {
     font-size: 26px;
+    padding: 2px;
   }
 
   .container h2 {
