@@ -568,7 +568,8 @@ form .form-check-input {
   }
 
   footer a {
-    font-size: 45px;
+    font-size: 26px;
+    padding: 8px;
   }
 
   .cardPromo {
@@ -593,12 +594,7 @@ form .form-check-input {
   }
 
   .containerQuienesSomos p {
-    font-size: 16px;
-  }
-
-  footer a {
-    font-size: 26px;
-    padding: 2px;
+    font-size: 18px;
   }
 
   .container h2 {
